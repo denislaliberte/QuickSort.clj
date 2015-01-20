@@ -11,3 +11,9 @@
   (pending)
     (should= '(3,2,1) (quicksort '(1,2,3))))
 )
+
+(describe "filter-less"
+  (it "return all element of a sequence less than"
+    (should= '(1) (filter-less '(1,2,3) 2))
+  )
+)

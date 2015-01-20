@@ -4,3 +4,7 @@
   a
 )
 
+(defn filter-less [a,b] 
+  (filter #(< % b) a )
+)
+
