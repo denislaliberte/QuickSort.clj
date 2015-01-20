@@ -8,7 +8,10 @@
   (it "return one element array"
     (should= '(1) (quicksort '(1))))
   (it "sort three element array"
-    (should= '(1,2,3) (quicksort '(2,3,1))))
+    (should= '(1,2,3) (quicksort '(2,3,1)))
+    (should= '(10,20,30) (quicksort '(20,30,10)))
+    
+  )
 )
 
 (describe "filter-less"
