@@ -9,7 +9,7 @@
     a
   :else 
     (let [pivot (first a)]
-      (concat 
+      (lazy-cat 
         (quicksort (filter-compare a < pivot)) 
         (filter-compare a = pivot) 
         (quicksort (filter-compare a > pivot))
