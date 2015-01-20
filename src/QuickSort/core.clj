@@ -8,3 +8,7 @@
   (filter #(< % b) a )
 )
 
+(defn filter-more [a,b] 
+  (filter #(> % b) a )
+)
+

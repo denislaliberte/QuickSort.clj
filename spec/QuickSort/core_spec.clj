@@ -17,3 +17,9 @@
     (should= '(1) (filter-less '(1,2,3) 2))
   )
 )
+
+(describe "filter-more"
+  (it "return all element of a sequence more than"
+    (should= '(3) (filter-more '(1,2,3) 2))
+  )
+)
