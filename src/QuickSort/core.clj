@@ -12,3 +12,6 @@
   (filter #(> % b) a )
 )
 
+(defn filter-equal [a,b] 
+  (filter #(= % b) a )
+)

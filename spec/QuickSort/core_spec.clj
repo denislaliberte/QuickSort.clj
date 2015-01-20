@@ -23,3 +23,9 @@
     (should= '(3) (filter-more '(1,2,3) 2))
   )
 )
+
+(describe "filter-equal"
+  (it "return all element of a sequence equal to"
+    (should= '(2) (filter-equal '(1,2,3) 2))
+  )
+)
