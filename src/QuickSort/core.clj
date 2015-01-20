@@ -12,8 +12,12 @@
   (filter #(= % b) a )
 )
 (defn quicksort "it return a list sorted" [a]
-  (let [pivot (first a)]
-    (concat (filter-less a pivot) (filter-equal a pivot) (filter-more a pivot))
+  (cond (<= (count a) 1)
+    a
+  :else 
+    (let [pivot (first a)]
+      (concat (quicksort (filter-less a pivot)) (filter-equal a pivot) (quicksort (filter-more a pivot)))
+    )
   )
 )
 
